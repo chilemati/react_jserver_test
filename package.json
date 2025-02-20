@@ -4,10 +4,10 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "(cd data && npm run db) & vite",
+    "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
-    "preview": "(cd data && npm run db) & vite preview"
+    "preview": "vite preview"
   },
   "dependencies": {
     "@emotion/react": "^11.13.3",

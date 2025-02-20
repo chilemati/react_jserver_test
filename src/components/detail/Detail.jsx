@@ -33,7 +33,7 @@ const Detail = () => {
 
   useEffect(() => {
     axios
-      .get("http://localhost:9000/blogs/"+id)
+      .get("https://jsonserver-nodejs.vercel.app/blogs/"+id)
       .then((resp) => {
         // runs if true
         // console.log(resp.data)
@@ -46,7 +46,7 @@ const Detail = () => {
   }, []);
   function handleDelete(id) {
     axios
-      .delete("http://localhost:9000/blogs/"+id)
+      .delete("https://jsonserver-nodejs.vercel.app/blogs/"+id)
       .then((resp) => {
         // runs if true
         // console.log(resp.data,id)

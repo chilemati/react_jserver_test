@@ -49,7 +49,7 @@ return (
       onSubmit={(values) => {
         
         axios
-        .post("http://localhost:9000/blogs",values)
+        .post("https://jsonserver-nodejs.vercel.app/blogs",values)
         .then((resp) => {
           // runs if true
           notify('Blog Created Successfully!!')

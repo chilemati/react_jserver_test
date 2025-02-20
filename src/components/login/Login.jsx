@@ -45,7 +45,7 @@ const Login = () => {
         e.preventDefault()
         
         axios
-        .get("http://localhost:9000/users/"+email)
+        .get("https://jsonserver-nodejs.vercel.app/users/"+email)
         .then((resp) => {
           // runs if true
           if(resp.data.password === password) {

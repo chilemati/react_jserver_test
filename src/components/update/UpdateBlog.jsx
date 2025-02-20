@@ -26,7 +26,7 @@ const UpdateBlog = () => {
 
     useEffect(()=> {
         axios
-        .get("http://localhost:9000/blogs/"+slug)
+        .get("https://jsonserver-nodejs.vercel.app/blogs/"+slug)
         .then((resp) => {
           // runs if true
         //   console.log(resp.data)
@@ -68,7 +68,7 @@ return (
       onSubmit={(values) => {
         
         axios
-        .patch("http://localhost:9000/blogs/"+slug,values)
+        .patch("https://jsonserver-nodejs.vercel.app/blogs/"+slug,values)
         .then((resp) => {
           // runs if true
           notify('Blog Updated Successfully!!')

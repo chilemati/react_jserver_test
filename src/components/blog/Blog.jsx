@@ -7,7 +7,7 @@ const Blog = () => {
 
   useEffect(() => {
     axios
-      .get("http://localhost:9000/blogs")
+      .get("https://jsonserver-nodejs.vercel.app/blogs")
       .then((resp) => {
         // runs if true
         // console.log(resp.data)
