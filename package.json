@@ -7,7 +7,7 @@
     "dev": "(cd data && npm run db) & vite",
     "build": "vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "(cd data && npm run db) & vite preview"
   },
   "dependencies": {
     "@emotion/react": "^11.13.3",
